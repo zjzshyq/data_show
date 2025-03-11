@@ -12,7 +12,7 @@ with open('../common/colors.json') as f:
 FPS = 60
 DURATION = 0.5
 frames = int(FPS*DURATION*60)
-excel_dir = '/Users/huyiqing/PycharmProjects/data_show/sjv_population/data/population_predictions_2024_2050_cn.xlsx'
+excel_dir = '/Users/huyiqing/PycharmProjects/data_show/sjv_population_v2/data/population_predictions_2024_2050_cn.xlsx'
 df = DataHandler.DataHandler(excel_file=excel_dir, number_of_frames=frames).df
 
 canvas = Canvas.canvas()
@@ -22,11 +22,13 @@ bar_chart = BarRace.bar_race(df = df, canvas=canvas.canvas,
                              x_pos=170)
 canvas.add_sub_plot(bar_chart)
 
-# 标题：
+# 标题：【预测】中国人口下滑背后的世界人口格局｜1975-2050世界人口变迁
+# 封面：中国人口下滑，世界格局将如何改变？
 # 数据来源: https://data.worldbank.org/
 # 预测模型: ARIMA
 # BGM: Nijamena
 # 需要具体数据的小伙伴，可以在评论区留言哦
+
 canvas.add_title('全球人口增长变化及预测 (1975-2050)', color=(0,0,0))
 canvas.add_sub_title('单位: 百万 (M)', color=(111,111,111))
 canvas.add_logo(logo_dir, pos_ratio=(0.77, 0))
