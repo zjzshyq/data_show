@@ -34,12 +34,13 @@ canvas.add_sub_plot(bar_chart)
 #                                   width=chart_width, height=chart_height, x_pos=x_pos, y_pos=y_pos,
 #                                   draw_points=False, unit='B', line_width= line_width, font_size= 20)
 # canvas.add_sub_plot(line_chart)
-
-# India vs The World: Population Change (1975-2050) | Dynamic Data Visualization
-# Data source: https://data.worldbank.org/
-# Prediction model: ARIMA
-# BGM: Nijamena
-# If you need the data in the video, please leave the comment below.
+'''
+India vs The World: Population Change (1975-2050) | Dynamic Data Visualization
+Data source: worldbank.org
+Prediction model: ARIMA
+BGM: Timberman--Nijamena
+If you need the data in the video, please leave the comment below.
+'''
 canvas.add_title('Global Population Race (1975-2050)', color=(0,0,0))
 canvas.add_sub_title('Unit: Million (M)', color=(111,111,111))
 canvas.add_logo('../common/logo.png', pos_ratio=(0.77, 0))
